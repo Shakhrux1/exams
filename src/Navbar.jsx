@@ -2,12 +2,16 @@ import icon1 from './icon/Vector (Stroke).png'
 import icon2 from './icon/Vector (Stroke) (1).png'
 import icon3 from './icon/Vector (Stroke) (2).png'
 import icon4 from './icon/Vector (Stroke) (3).png'
+import burder from './icon/burger.png'
 
 function navbar () {
     return(
         <div>
             <nav>
             <h1><span>X</span>WEAR</h1>
+            <div className="img">
+                <img src={burder} alt="" />
+            </div>
             <ul>
                 <li><a href="">Одежда</a></li>
                 <li><a id='Обувь' href="">Обувь</a></li>

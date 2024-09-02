@@ -19,6 +19,7 @@ html{
     background-color: #121214;
 }
 .container {
+    background-color: sandybrown;
     max-width: 1450px;
     margin: auto;
 }
@@ -48,6 +49,9 @@ nav {
         }
     }
 
+    .img{
+        display: none;
+    }
     ul {
         display: flex;
         align-items: center;
@@ -134,6 +138,9 @@ nav {
 .box-dad{
     padding: 0 10px;
     margin-top:40px ;
+    
+
+.mySwiper {
     .reletive{
         position: relative;
         left: 0;
@@ -188,8 +195,6 @@ nav {
             }
         }
     }
-
-.mySwiper {
     width: 100%;
     height: 300px; 
   }
@@ -735,6 +740,8 @@ nav {
         justify-content: center;
         .gridItem{
             .relative {
+                height: 360px;
+                overflow: hidden;
                 border-bottom: 2px solid transparent;
                 cursor: pointer;
                 position: relative;
@@ -743,25 +750,20 @@ nav {
                 top:0;
                 transition: all .3s;
                 z-index: 1;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    right: 0px;
-                    bottom: 0px;
-                    z-index: 111;
-                    background-color: #121214;
-                    width: 0%;
-                    height: 2px;
+                &:hover .hoverCard{
+                    bottom:0px;
+                }
+                &:hover h2{
+                    bottom: 108.5px;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    color: #fff;
+                }
+                &:hover img{
+                    transform: scale(1.05);
+                }
+                img{
                     transition: all .3s;
                 }
-                &:hover::before {
-                    width: 100%;
-                    
-                }
-                &:hover{
-                    transform: translateY(-10px);
-                } 
-                
                 .yulduz{
                     display: none;
                     position: relative;
@@ -773,15 +775,34 @@ nav {
                         transform: scale(1.5);
                     }
                 }
-                h4{
-                    padding: 0px 20px;
+                
+                h2{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    transition: all .3s;
+                    padding: 10px 75px;
+                    background-color: rgba(0, 0, 0, 0.2);
                 }
-                p{
-                    padding: 0px 20px;
-                    color: #3C3C3C;
-                    padding-bottom: 5px;
-                    span{
-                        font-size: 10px;
+                .hoverCard{
+                    transition: all .3s;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    position: absolute;
+                    color: #fff;
+                    left: 0;
+                    bottom: -118px;
+                    h4{
+                        padding: 5px 20px;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                        padding: 0px 20px;
+                        padding-bottom: 5px;
+                        span{
+                            font-size: 10px;
+                        }
                     }
                 }
         
@@ -804,7 +825,7 @@ nav {
         .swiper{
             div{
                 img{
-                    width: 686px !important;
+                    width: 686px ;
                 }
             }
         }
@@ -1091,6 +1112,7 @@ nav {
     
 }
 .article-btn{
+    padding: 0 10px;
     margin-top: -18rem;
     .rastichat-btn{
         padding: 18px 40px;
@@ -1125,6 +1147,7 @@ nav {
     
 }
 .btn1-click{
+    margin: 0 10px;
     margin-top: 30px;
     width: 70%;
     border: 1px solid #DCDCE0;
@@ -1167,6 +1190,7 @@ nav {
     }
 }
  .btn2-click{
+     margin: 0 10px;
     margin-top: 30px;
     width: 70%;
     border: 1px solid #DCDCE0;
@@ -1270,7 +1294,8 @@ nav {
   
  .faq{
     margin-top: 20px;
-    width: 100%;
+    width: 98.5%;
+    padding:  0 10px;
     h5{
         margin: 10px 0;
         font-size: 42px;
@@ -1309,7 +1334,414 @@ nav {
         
     }
 }
-  @media (max-width: 500px) {
+
+
+@media(max-width: 1310px) {
+    .box-dad {
+        .mySwiper {
+            .reletive {
+                .position {
+                    top: 20px;
+                }
+            }
+        }
+    }
+    .article-btn {
+        margin-top: -17rem;
+    }
+}
+@media(max-width:1218px){
+    .bgc-img{
+        height: 595px;
+        .flex-box{
+            .rev{
+                img{
+                    width: 550px;
+                }
+            }
+        }
+    }
+    .tovar{
+        .flrx{
+            gap: 20px;
+        }
+    }
+}
+@media(max-width:1138px){
+    .box3{
+        .dad{
+            .relative{
+                .yulduz{
+                    left: 180px;
+                    top: -190px;
+                }
+            }
+        }
+    }.yulduz_yon{
+        left: 180px;
+        top: -190px;
+    }
+    .bgc-img{
+        height: 495px;
+        .flex-box{
+            .rev{
+                img{
+                    width: 480px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1131px){
+    .btn1-click, .btn2-click{
+        width:62%;
+    }
+    .tovar{
+        .flrx{
+            gap: 40px;
+            .activeCeti{
+                width: 500px !important; 
+                height: 368px !important; 
+                overflow: hidden; 
+                position: relative;
+                img{
+                    width: 100%; 
+                    height: auto; 
+                    position: absolute; 
+                    top: 50%; 
+                    left: 50%; 
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+@media(max-width:1114px){
+    nav{
+        ul{
+            gap: 40px;
+        }
+    }
+}
+@media(max-width:1096px){
+    .article-btn{
+        margin-top: -15rem;
+    }
+}
+@media(max-width:1070px){
+    .box-dad {
+        .mySwiper {
+            .reletive {
+                .position {
+                    top: 10px;
+                    left: 20px;
+                    h1{
+                        width: 80%;
+                        text-align: start;
+                    }
+                    .btn-swiper{
+                        padding: 15px 50px;
+                        left: -38%;
+                        &::before{
+                            padding: 15px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-next {
+            top: 85%;
+            left: 100px; 
+          }
+          
+          .swiper-button-prev {
+            top: 85%;
+            left: 20px; 
+          }
+    }
+}
+@media(max-width:1025px){
+    .bgc-img{
+        height: 410px;
+        .flex-box{
+            .top{
+                .a{
+                    article{
+                        gap: 10px;
+                    }
+                }
+            }
+            .rev{
+                margin-top: -100px;
+                img{
+                    width: 420px;
+
+                }
+            }
+        }
+    }
+    .box3{
+        .dad{
+            .relative{
+                .yulduz{
+                    left: 140px;
+                    top: -150px;
+                }
+            }
+        }
+    }
+    .yulduz_yon{
+        left: 140px;
+        top: -150px;
+    }
+    .box7{
+        display: block;
+        .box-box7{
+            margin-top: 20px;
+            display: flex;
+        }
+    }
+}
+@media(max-width:1024px){
+    .box3{
+        .dad{
+            .relative{
+                .yulduz{
+                    left: 200px;
+                    top: -220px;
+                }
+            }
+        }
+    }
+    .yulduz_yon{
+        left: 200px;
+        top: -220px;
+    }
+}
+@media(max-width:1011px){
+    .bgc-img{
+        margin-bottom: 100px;
+        .flex-box{
+            .top{
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:977px){
+    .article-btn{
+        margin-top: -12rem;
+    }
+    nav{
+        ul{
+            gap: 25px;
+        }
+    }
+}
+@media(max-width:910px){
+    .box3{
+        .dad{
+            .relative{
+                .yulduz{
+                    left: 180px;
+                    top: -180px;
+                }
+            }
+        }
+    }
+    .yulduz_yon{
+        left: 200px;
+        top: -220px;
+    }
+    .rastichat{
+        display: block;
+        .border{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            h6{
+                font-size: 35px;
+               width: 300px;
+            }
+            p{
+                font-size: 19px;
+                padding: 10px 20px ;
+                width: 280px;
+            }
+            h3{
+                font-size: 25px;
+                width: 230px;
+            }
+        }
+    }
+    .article-btn{
+        margin-top: 1rem;
+    }
+    .btn1-click , .btn2-click{
+        width: 97.5%;
+    }
+}
+@media(max-width:891px){
+    .tovar{
+        .flrx{
+            display: block;
+            
+        }
+    }
+}
+@media(max-width:850px){
+    nav{
+        position: relative;
+        left: 0;
+        top: 0;
+        ul{
+            display: none;
+        }
+        .img{
+            position: absolute;
+            display: block;
+            left: 110px;
+            top: 37%;
+        }
+    }
+    .box-dad{
+        .mySwiper{
+            .reletive{
+                .position{
+                    h1{
+                        font-size: 40px;
+                    }
+                    p{
+                        text-align: start;
+                        padding: 8px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .tovar{
+        .dettall{
+            width: 350px;
+        }
+        .faq{
+            width: 50%;
+        }
+    }
+    .bgc-img{
+        .flex-box{
+            .top{
+                .a{
+                    article{
+                        h2{
+                            padding: 10px 20px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:800px){
+    .bgc-img{
+        height: 350px;
+        .flex-box{
+            display: block;
+            .top{
+                h1{
+                    font-size: 49px;
+                }
+                .a{
+                    margin-bottom: 40px;
+                    gap: 4px;
+                }
+            }
+            .rev{
+               display: none;
+            }
+            .btn-swiper{
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .box7{
+        margin-top: -100px;
+        .box-box7{
+            gap: 20px;
+        }
+    }
+    .box3{
+        .dad{
+            .relative{
+                .yulduz{
+                    left: 140px;
+                    top: -160px;
+                }
+            }
+        }
+    }
+    .yulduz_yon{
+        left: 200px;
+        top: -220px;
+    }
+}
+@media(max-width:713px){
+    .box-dad{
+        .mySwiper{
+            .reletive{
+                .position{
+                    p{
+                        font-size: 14px;
+                    }
+                    .btn-swiper{
+                        left: -40%;
+                        padding: 10px 30px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #000; 
+            background-color: #F0F2F6; 
+            border-radius: 50%;
+            width: 30px; 
+            height:30px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+          font-size: 12px; 
+        }
+        .swiper-button-next {
+            top: 90%;
+            left: 60px; 
+          }
+          
+          .swiper-button-prev {
+            top: 90%;
+            left: 20px; 
+          }
+    }
+}
+@media(max-width:768px){
+    .box3{
+        .dad{
+            .swiper-slide {
+                width: 162.75px !important;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
     .form-container {
       padding: 10px;
   

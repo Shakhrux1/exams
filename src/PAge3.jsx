@@ -40,7 +40,7 @@ function Page3() {
                     pagination={{ clickable: true }}
                     breakpoints={{
                         640: { slidesPerView: 2, spaceBetween: 20 },
-                        768: { slidesPerView: 4, spaceBetween: 40 },
+                        768: { slidesPerView: 5, spaceBetween: 50 },
                         1024: { slidesPerView: 5, spaceBetween: 50 },
                     }}
                     
@@ -56,7 +56,7 @@ function Page3() {
                         { img: ceti3, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' },
                         { img: ceti4, title: 'Men’s Soccer Shoes', price: '2 699 ₽' },
                     ].map((product, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} style={{ width: '162.75px' }}> 
                             <div className="relative">
                                 <img src={product.img} alt={product.title} />
                                 <img

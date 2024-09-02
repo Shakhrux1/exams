@@ -32,7 +32,7 @@ function Page3() {
     return (
         <div className="box3">
             <div className="flex">
-                <h1>Обувь</h1>
+                <h1>Аксессуары</h1>
                 <a href="больше товаров">больше товаров &rarr; </a>
             </div>
             <div className="dad">

@@ -22,6 +22,7 @@ html {
 }
 
 .container {
+  background-color: sandybrown;
   max-width: 1450px;
   margin: auto;
 }
@@ -49,6 +50,9 @@ nav h1 {
 }
 nav h1 span {
   color: #49D0FF;
+}
+nav .img {
+  display: none;
 }
 nav ul {
   display: flex;
@@ -132,28 +136,32 @@ nav article p span {
   padding: 0 10px;
   margin-top: 40px;
 }
-.box-dad .reletive {
+.box-dad .mySwiper {
+  width: 100%;
+  height: 300px;
+}
+.box-dad .mySwiper .reletive {
   position: relative;
   left: 0;
   top: 0;
 }
-.box-dad .reletive .position {
+.box-dad .mySwiper .reletive .position {
   position: absolute;
   left: 100px;
   top: 100px;
 }
-.box-dad .reletive .position h1 {
+.box-dad .mySwiper .reletive .position h1 {
   font-size: 51px;
   width: 20%;
   font-weight: 900;
 }
-.box-dad .reletive .position p {
+.box-dad .mySwiper .reletive .position p {
   font-size: 19px;
   width: 50%;
   margin-left: -18px;
   padding: 15px 0;
 }
-.box-dad .reletive .position .btn-swiper {
+.box-dad .mySwiper .reletive .position .btn-swiper {
   padding: 20px 80px;
   border: 1px solid #000;
   overflow: hidden;
@@ -167,7 +175,7 @@ nav article p span {
   z-index: 44;
   cursor: pointer;
 }
-.box-dad .reletive .position .btn-swiper::before {
+.box-dad .mySwiper .reletive .position .btn-swiper::before {
   content: "Перейти в каталог ";
   position: absolute;
   width: 100%;
@@ -182,12 +190,8 @@ nav article p span {
   background-color: #121214;
   border-radius: 8px;
 }
-.box-dad .reletive .position .btn-swiper:hover::before {
+.box-dad .mySwiper .reletive .position .btn-swiper:hover::before {
   transform: translateX(0);
-}
-.box-dad .mySwiper {
-  width: 100%;
-  height: 300px;
 }
 .box-dad .swiper-button-next,
 .box-dad .swiper-button-prev {
@@ -701,6 +705,8 @@ nav article p span {
   justify-content: center;
 }
 .KatalogPage .gridContainer .gridItem .relative {
+  height: 360px;
+  overflow: hidden;
   border-bottom: 2px solid transparent;
   cursor: pointer;
   position: relative;
@@ -710,22 +716,19 @@ nav article p span {
   transition: all 0.3s;
   z-index: 1;
 }
-.KatalogPage .gridContainer .gridItem .relative::before {
-  content: "";
-  position: absolute;
-  right: 0px;
+.KatalogPage .gridContainer .gridItem .relative:hover .hoverCard {
   bottom: 0px;
-  z-index: 111;
-  background-color: #121214;
-  width: 0%;
-  height: 2px;
+}
+.KatalogPage .gridContainer .gridItem .relative:hover h2 {
+  bottom: 108.5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+.KatalogPage .gridContainer .gridItem .relative:hover img {
+  transform: scale(1.05);
+}
+.KatalogPage .gridContainer .gridItem .relative img {
   transition: all 0.3s;
-}
-.KatalogPage .gridContainer .gridItem .relative:hover::before {
-  width: 100%;
-}
-.KatalogPage .gridContainer .gridItem .relative:hover {
-  transform: translateY(-10px);
 }
 .KatalogPage .gridContainer .gridItem .relative .yulduz {
   display: none;
@@ -738,15 +741,33 @@ nav article p span {
 .KatalogPage .gridContainer .gridItem .relative .yulduz:hover {
   transform: scale(1.5);
 }
-.KatalogPage .gridContainer .gridItem .relative h4 {
-  padding: 0px 20px;
+.KatalogPage .gridContainer .gridItem .relative h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: all 0.3s;
+  padding: 10px 75px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-.KatalogPage .gridContainer .gridItem .relative p {
+.KatalogPage .gridContainer .gridItem .relative .hoverCard {
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  color: #fff;
+  left: 0;
+  bottom: -118px;
+}
+.KatalogPage .gridContainer .gridItem .relative .hoverCard h4 {
+  padding: 5px 20px;
+  text-align: center;
+}
+.KatalogPage .gridContainer .gridItem .relative .hoverCard p {
+  text-align: center;
   padding: 0px 20px;
-  color: #3C3C3C;
   padding-bottom: 5px;
 }
-.KatalogPage .gridContainer .gridItem .relative p span {
+.KatalogPage .gridContainer .gridItem .relative .hoverCard p span {
   font-size: 10px;
 }
 
@@ -762,7 +783,7 @@ nav article p span {
   gap: 80px;
 }
 .tovar .flrx .swiper div img {
-  width: 686px !important;
+  width: 686px;
 }
 .tovar .flrx div h1 {
   font-size: 50px;
@@ -1032,6 +1053,7 @@ nav article p span {
 }
 
 .article-btn {
+  padding: 0 10px;
   margin-top: -18rem;
 }
 .article-btn .rastichat-btn {
@@ -1066,6 +1088,7 @@ nav article p span {
 }
 
 .btn1-click {
+  margin: 0 10px;
   margin-top: 30px;
   width: 70%;
   border: 1px solid #DCDCE0;
@@ -1108,6 +1131,7 @@ nav article p span {
 }
 
 .btn2-click {
+  margin: 0 10px;
   margin-top: 30px;
   width: 70%;
   border: 1px solid #DCDCE0;
@@ -1199,7 +1223,8 @@ nav article p span {
 
 .faq {
   margin-top: 20px;
-  width: 100%;
+  width: 98.5%;
+  padding: 0 10px;
 }
 .faq h5 {
   margin: 10px 0;
@@ -1237,6 +1262,303 @@ nav article p span {
   display: block;
 }
 
+@media (max-width: 1310px) {
+  .box-dad .mySwiper .reletive .position {
+    top: 20px;
+  }
+  .article-btn {
+    margin-top: -17rem;
+  }
+}
+@media (max-width: 1218px) {
+  .bgc-img {
+    height: 595px;
+  }
+  .bgc-img .flex-box .rev img {
+    width: 550px;
+  }
+  .tovar .flrx {
+    gap: 20px;
+  }
+}
+@media (max-width: 1138px) {
+  .box3 .dad .relative .yulduz {
+    left: 180px;
+    top: -190px;
+  }
+  .yulduz_yon {
+    left: 180px;
+    top: -190px;
+  }
+  .bgc-img {
+    height: 495px;
+  }
+  .bgc-img .flex-box .rev img {
+    width: 480px;
+  }
+}
+@media (max-width: 1131px) {
+  .btn1-click, .btn2-click {
+    width: 62%;
+  }
+  .tovar .flrx {
+    gap: 40px;
+  }
+  .tovar .flrx .activeCeti {
+    width: 500px !important;
+    height: 368px !important;
+    overflow: hidden;
+    position: relative;
+  }
+  .tovar .flrx .activeCeti img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 1114px) {
+  nav ul {
+    gap: 40px;
+  }
+}
+@media (max-width: 1096px) {
+  .article-btn {
+    margin-top: -15rem;
+  }
+}
+@media (max-width: 1070px) {
+  .box-dad .mySwiper .reletive .position {
+    top: 10px;
+    left: 20px;
+  }
+  .box-dad .mySwiper .reletive .position h1 {
+    width: 80%;
+    text-align: start;
+  }
+  .box-dad .mySwiper .reletive .position .btn-swiper {
+    padding: 15px 50px;
+    left: -38%;
+  }
+  .box-dad .mySwiper .reletive .position .btn-swiper::before {
+    padding: 15px 0;
+  }
+  .box-dad .swiper-button-next {
+    top: 85%;
+    left: 100px;
+  }
+  .box-dad .swiper-button-prev {
+    top: 85%;
+    left: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .bgc-img {
+    height: 410px;
+  }
+  .bgc-img .flex-box .top .a article {
+    gap: 10px;
+  }
+  .bgc-img .flex-box .rev {
+    margin-top: -100px;
+  }
+  .bgc-img .flex-box .rev img {
+    width: 420px;
+  }
+  .box3 .dad .relative .yulduz {
+    left: 140px;
+    top: -150px;
+  }
+  .yulduz_yon {
+    left: 140px;
+    top: -150px;
+  }
+  .box7 {
+    display: block;
+  }
+  .box7 .box-box7 {
+    margin-top: 20px;
+    display: flex;
+  }
+}
+@media (max-width: 1024px) {
+  .box3 .dad .relative .yulduz {
+    left: 200px;
+    top: -220px;
+  }
+  .yulduz_yon {
+    left: 200px;
+    top: -220px;
+  }
+}
+@media (max-width: 1011px) {
+  .bgc-img {
+    margin-bottom: 100px;
+  }
+  .bgc-img .flex-box .top p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 977px) {
+  .article-btn {
+    margin-top: -12rem;
+  }
+  nav ul {
+    gap: 25px;
+  }
+}
+@media (max-width: 910px) {
+  .box3 .dad .relative .yulduz {
+    left: 180px;
+    top: -180px;
+  }
+  .yulduz_yon {
+    left: 200px;
+    top: -220px;
+  }
+  .rastichat {
+    display: block;
+  }
+  .rastichat .border {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .rastichat .border h6 {
+    font-size: 35px;
+    width: 300px;
+  }
+  .rastichat .border p {
+    font-size: 19px;
+    padding: 10px 20px;
+    width: 280px;
+  }
+  .rastichat .border h3 {
+    font-size: 25px;
+    width: 230px;
+  }
+  .article-btn {
+    margin-top: 1rem;
+  }
+  .btn1-click, .btn2-click {
+    width: 97.5%;
+  }
+}
+@media (max-width: 891px) {
+  .tovar .flrx {
+    display: block;
+  }
+}
+@media (max-width: 850px) {
+  nav {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .img {
+    position: absolute;
+    display: block;
+    left: 110px;
+    top: 37%;
+  }
+  .box-dad .mySwiper .reletive .position h1 {
+    font-size: 40px;
+  }
+  .box-dad .mySwiper .reletive .position p {
+    text-align: start;
+    padding: 8px 20px;
+  }
+  .tovar .dettall {
+    width: 350px;
+  }
+  .tovar .faq {
+    width: 50%;
+  }
+  .bgc-img .flex-box .top .a article h2 {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 800px) {
+  .bgc-img {
+    height: 350px;
+  }
+  .bgc-img .flex-box {
+    display: block;
+  }
+  .bgc-img .flex-box .top h1 {
+    font-size: 49px;
+  }
+  .bgc-img .flex-box .top .a {
+    margin-bottom: 40px;
+    gap: 4px;
+  }
+  .bgc-img .flex-box .rev {
+    display: none;
+  }
+  .bgc-img .flex-box .btn-swiper {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box7 {
+    margin-top: -100px;
+  }
+  .box7 .box-box7 {
+    gap: 20px;
+  }
+  .box3 .dad .relative .yulduz {
+    left: 140px;
+    top: -160px;
+  }
+  .yulduz_yon {
+    left: 200px;
+    top: -220px;
+  }
+}
+@media (max-width: 713px) {
+  .box-dad .mySwiper .reletive .position p {
+    font-size: 14px;
+  }
+  .box-dad .mySwiper .reletive .position .btn-swiper {
+    left: -40%;
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+  .box-dad .swiper-button-next,
+  .box-dad .swiper-button-prev {
+    color: #000;
+    background-color: #F0F2F6;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-dad .swiper-button-next::after,
+  .box-dad .swiper-button-prev::after {
+    font-size: 12px;
+  }
+  .box-dad .swiper-button-next {
+    top: 90%;
+    left: 60px;
+  }
+  .box-dad .swiper-button-prev {
+    top: 90%;
+    left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .box3 .dad .swiper-slide {
+    width: 162.75px !important;
+  }
+}
 @media (max-width: 500px) {
   .form-container {
     padding: 10px;

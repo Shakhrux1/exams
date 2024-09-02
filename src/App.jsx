@@ -8,7 +8,7 @@ import Page6 from './PAge6.jsx'
 import Page7 from './PAge7.jsx'
 import Page8 from './PAge8.jsx'
 import Page9 from './PAge9.jsx'
-import NavbarSearch from './NavbarSearch.jsx'
+// import NavbarSearch from './NavbarSearch.jsx'
 import KatalogPAge from './Katalog.jsx'
 import Hover from './SwiperHover.jsx'
 import Rastichat from './Rastichat.jsx'
@@ -44,7 +44,7 @@ function App() {
         <div className="box-9-bgc">
           <div className="container">
             <Page9/>
-            <NavbarSearch/>
+            
           </div>
         </div>
 

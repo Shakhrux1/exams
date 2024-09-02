@@ -28,9 +28,11 @@ function Rastichat() {
           
         </div>
         <div className="border">
-          <h6>Как установить приложение Poizon</h6>
-          <p>Подробная, пошаговая инструкция по установке приложения Poizon</p>
-          <h3>Читать полностью →</h3>
+          <article>
+            <h6>Как установить приложение Poizon</h6>
+            <p>Подробная, пошаговая инструкция по установке приложения Poizon</p>
+            <h3>Читать полностью →</h3>
+          </article>
           <img src={telefon} alt="" />
         </div>
       </div>
@@ -79,11 +81,15 @@ function Rastichat() {
               <h2>Напишите нам в мессенджеры</h2>
               <div className="flex-ras">
                 <article>
-                    <img src={telegram} alt="" />
+                    <a href="https://t.me/shakhrux_iq">
+                      <img src={telegram} alt="" />
+                    </a>
                     <h4>Написать в Telegram</h4>
                 </article>
                 <article>
-                    <img src={waysap} alt="" />
+                    <a href="https://t.me/shakhrux_iq">
+                      <img src={waysap} alt="" />
+                    </a>
                     <h4>Написать в whatsapp</h4>
                 </article>
               </div>
@@ -101,26 +107,26 @@ function Rastichat() {
                     <div className="form-group">
                     <label>Ваше имя:</label>
                     <input type="text" placeholder="Введите имя" />
-                    </div>
-                    <div className="form-group">
-                    <label>Номер телефона:</label>
-                    <input type="text" placeholder="+7 (000) 000 - 00 - 00" />
-                    </div>
-                    <div className="form-group">
-                    <label>Email адрес:</label>
-                    <input type="email" placeholder="example@myemail.com" />
-                    </div>
-                    <div className="form-group file-upload">
-                    <label htmlFor="file-upload">Прикрепите фото товара</label>
-                    <input id="file-upload" type="file" />
-                    </div>
-                    <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
-                </form>
-                <p className="privacy-policy">
-                    Нажимая кнопку Отправить заявку вы соглашаетесь с{' '}
-                    <a href="#">Политикой конфиденциальности</a>
-                </p>
-                </div>
+                      </div>
+                      <div className="form-group">
+                      <label>Номер телефона:</label>
+                      <input type="text" placeholder="+7 (000) 000 - 00 - 00" />
+                      </div>
+                      <div className="form-group">
+                      <label>Email адрес:</label>
+                      <input type="email" placeholder="example@myemail.com" />
+                      </div>
+                      <div className="form-group file-upload">
+                      <label htmlFor="file-upload">Прикрепите фото товара</label>
+                      <input id="file-upload" type="file" />
+                      </div>
+                      <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+                  </form>
+                  <p className="privacy-policy">
+                      Нажимая кнопку Отправить заявку вы соглашаетесь с{' '}
+                      <a href="#">Политикой конфиденциальности</a>
+                  </p>
+                  </div>
 
             </section>
       </div>
