@@ -13,6 +13,8 @@ import KatalogPAge from './Katalog.jsx'
 import Hover from './SwiperHover.jsx'
 import Rastichat from './Rastichat.jsx'
 import Faq from './Faq.jsx'
+import Brend from './Brend.jsx'
+import Adejda from './Adejda.jsx'
 
 
 function App() {
@@ -54,6 +56,8 @@ function App() {
         <Hover/>
         <Rastichat/>
         <Faq/>
+        <Brend/>
+        <Adejda/>
       </div>
    </div>
      

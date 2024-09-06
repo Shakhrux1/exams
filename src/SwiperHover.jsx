@@ -1,10 +1,10 @@
 import cet from "./img2/Rectangle 83.png";
 import cet2 from "./img2/Rectangle 223 (2).png";
 import cet3 from "./img2/Rectangle 22 (7).png";
-// import cet4 from "./img2/Rectangle 223 (4).png";
-// import cet5 from "./img2/Rectangle 22 (13).png";
-// import cet6 from "./img2/Rectangle 22 (14).png";
-// import cet7 from "./img2/Rectangle 22 (15).png";
+import cet4 from "./img2/Rectangle 223 (4).png";
+import cet5 from "./img2/Rectangle 22 (13).png";
+import cet6 from "./img2/Rectangle 22 (14).png";
+import cet7 from "./img2/Rectangle 22 (15).png";
 
 import card from "./img/Frame 312.png";
 import card2 from "./img/Frame 316 (1).png";
@@ -17,21 +17,13 @@ import 'swiper/css/pagination';
 
 const Hover = () => {
   const [activeTab, setActiveTab] = useState("details");
-
-  // const rangCeti =[
-  //   {id:1 , img: cet},
-  //   {id:2 , img: cet2},
-  //   {id:3 , img: cet3},
-  //   {id:4 , img: cet4},
-  //   {id:5 , img: cet5},
-  //   {id:6 , img: cet6},
-  //   {id:7 , img: cet7},
-  // ]
   const [active, setActive] = useState(null)
   
-  const[activeRang, setRang] =useState(null)
+  const[activeRang, setRang] =useState(0)
   const clickRang =(b) =>{
-    setRang(activeRang === b ? null : b)
+    if (activeRang !== b) {
+      setRang(b);
+    }
   }
   const click =(a) =>{
     setActive(active === a ? null : a)
@@ -42,11 +34,7 @@ const Hover = () => {
       <p>Главная / Каталог товаров / Обувь / Nike Court Zoom Cage 2</p>
       <div className="flrx">
         <div className="siwiper">
-            {/* {rangCeti.map((imgRAng , id)=>(
-              <div key={id} className={activeRang === (imgRAng) ? 'cetiActive': 'activeCeti'}>
-                <img src={imgRAng.img} style={{width:'686px', height:"auto"}} alt="" />
-              </div>
-            ))} */}
+            
             <div  className={activeRang === 0 ? 'activeCeti': 'cetiActive'} style={{width:'686px', height:"auto"}}>
               <img src={cet} alt="" />
             </div>
@@ -55,6 +43,18 @@ const Hover = () => {
             </div>
             <div  className={activeRang === 2 ? 'activeCeti': 'cetiActive'} style={{width:'686px', height:"auto"}}>
               <img src={cet3} alt="" />
+            </div>
+            <div  className={activeRang === 3 ? 'activeCeti': 'cetiActive'} style={{width:'686px', height:"auto"}}>
+              <img src={cet4} alt="" />
+            </div>
+            <div  className={activeRang === 4 ? 'activeCeti': 'cetiActive'} style={{width:'686px', height:"auto"}}>
+              <img src={cet5} alt="" />
+            </div>
+            <div  className={activeRang === 5 ? 'activeCeti': 'cetiActive'} style={{width:'686px', height:"auto"}}>
+              <img src={cet6} alt="" />
+            </div>
+            <div  className={activeRang === 6 ? 'activeCeti': 'cetiActive'} style={{width:'686px', height:"auto"}}>
+              <img src={cet7} alt="" />
             </div>
         </div>
         <div>

@@ -6,6 +6,7 @@
   font-weight: weight;
   font-style: normal;
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 
 html {
@@ -17,11 +18,20 @@ html {
   margin: 0;
 }
 
+@keyframes ceti {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navbar-body {
   background-color: #121214;
 }
 
 .container {
+  background-color: sandybrown;
   max-width: 1450px;
   margin: auto;
 }
@@ -236,6 +246,7 @@ nav article p span {
 }
 
 .box3 {
+  overflow: hidden;
   margin-top: 40px;
   padding: 0 10px;
 }
@@ -266,6 +277,7 @@ nav article p span {
   justify-content: center;
 }
 .box3 .dad .swiper .swiper-slide {
+  overflow: hidden;
   border-radius: 10px;
   background: #fff;
   padding: 30px;
@@ -595,6 +607,108 @@ nav article p span {
   color: #DCDCE0;
 }
 
+.box10 {
+  margin-top: 40px;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 50px;
+  justify-content: center;
+  padding-top: 40px;
+}
+.box10 div h3 {
+  padding: 5px 5px;
+}
+.box10 div a img {
+  padding: 5px;
+}
+.box10 div .a {
+  color: gray;
+  transition: all 0.3s;
+  padding: 5px 5px;
+}
+.box10 div .a:hover {
+  color: #DCDCE0;
+}
+.box10 div p {
+  padding: 8px 0;
+  color: #DCDCE0;
+}
+.box10 div .Page1 img {
+  margin-top: 45px;
+}
+.box10 div article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.box10 div form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.box10 div form input {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  color: #DCDCE0;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 5px 0;
+  width: 100%;
+  margin-left: -5px;
+}
+.box10 div form button {
+  border: 0;
+  background-color: #49D0FF;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: all 0.3s;
+}
+.box10 div form button:hover {
+  transform: scale(1);
+}
+.box10 div .article {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+.box10 div .article img {
+  margin-right: 20px;
+}
+.box10 div ul {
+  list-style: none;
+}
+.box10 div ul li {
+  padding: 5px;
+}
+.box10 div ul li a {
+  color: gray;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.box10 div ul li a:hover {
+  color: #DCDCE0;
+}
+
+.pointer {
+  border-bottom: 1px solid #272525;
+  cursor: pointer;
+}
+
+.displayBlock {
+  display: none;
+}
+
+.displayNone {
+  display: block;
+  animation: acordion 0.3s linear 1;
+}
+
 .yulduz_yon {
   position: relative;
   left: 200px;
@@ -780,6 +894,22 @@ nav article p span {
   align-items: center;
   justify-content: space-between;
   gap: 80px;
+  overflow: hidden;
+}
+.tovar .flrx .activeCeti {
+  animation: ceti 0.5s linear 1;
+  width: 600px !important;
+  height: 408px !important;
+  overflow: hidden;
+  position: relative;
+}
+.tovar .flrx .activeCeti img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .tovar .flrx .swiper div img {
   width: 686px;
@@ -1222,8 +1352,8 @@ nav article p span {
 
 .faq {
   margin-top: 20px;
-  width: 98.5%;
   padding: 0 10px;
+  overflow: hidden;
 }
 .faq h5 {
   margin: 10px 0;
@@ -1252,13 +1382,135 @@ nav article p span {
 }
 .faq p {
   margin-top: 10px;
-  margin-left: 10px;
+  padding-left: 10px;
   display: none;
   animation: acordion 0.3s linear 1;
   font-size: 14px;
 }
 .faq .active {
   display: block;
+}
+
+.brend {
+  padding: 0 10px;
+  margin-top: 40px;
+}
+.brend h6 {
+  font-size: 40px;
+}
+.brend .brendGrid {
+  grid-template-columns: repeat(auto-fit, 318px);
+  gap: 50px;
+  justify-content: center;
+  row-gap: 20px;
+  display: grid;
+  margin: 0 50px;
+}
+.brend .brendGrid .logos {
+  width: 318px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.brend .brendGrid .logos:hover h1 {
+  left: 3%;
+}
+.brend .brendGrid .logos:hover {
+  box-shadow: 1px 1px 20px #49D0FF;
+}
+.brend .brendGrid .logos img {
+  transition: all 0.3s;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.brend .brendGrid .logos h1 {
+  top: 85%;
+  left: -100%;
+  text-align: center;
+  transition: all 0.3s;
+  position: absolute;
+  color: #ffffff;
+}
+
+.adejdas {
+  margin-top: 40px;
+  padding: 0 10px;
+}
+.adejdas h6 {
+  font-size: 60px;
+  padding: 10px 0;
+}
+.adejdas .adejda {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  justify-content: center;
+  gap: 30px;
+}
+.adejdas .adejda .adejdaItem {
+  border: 1px solid;
+  width: 320px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.adejdas .adejda .adejdaItem:hover {
+  transform: scale(1.02) translateY(-8px);
+}
+.adejdas .adejda .adejdaItem img {
+  transition: all 0.3s;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.adejdas .adejda .adejdaItem h1 {
+  position: absolute;
+  bottom: 35px;
+  z-index: 2;
+  left: 10px;
+}
+.adejdas .adejda .adejdaItem p {
+  position: absolute;
+  left: 10px;
+  bottom: 79px;
+  z-index: 2;
+  padding: 8px 15px;
+  color: #FFF;
+  background-color: red;
+}
+.adejdas .adejda .adejdaItem article {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  left: 10px;
+  z-index: 2;
+  bottom: 10px;
+}
+.adejdas .adejda .adejdaItem article h3 {
+  color: rgb(53, 51, 51);
+  text-decoration: line-through;
+}
+.adejdas .adejda .adejdaItem article h2 {
+  color: red;
+}
+.adejdas .adejda .adejdaItem article h2 span {
+  font-size: 18px;
 }
 
 @media (max-width: 1310px) {
@@ -1302,20 +1554,6 @@ nav article p span {
   }
   .tovar .flrx {
     gap: 40px;
-  }
-  .tovar .flrx .activeCeti {
-    width: 500px !important;
-    height: 368px !important;
-    overflow: hidden;
-    position: relative;
-  }
-  .tovar .flrx .activeCeti img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 @media (max-width: 1114px) {
@@ -1407,6 +1645,15 @@ nav article p span {
   nav ul {
     gap: 25px;
   }
+  .box9, .box10 {
+    gap: 200px !important;
+    row-gap: 50px !important;
+  }
+}
+@media (max-width: 937px) {
+  .tovar .flrx {
+    display: block;
+  }
 }
 @media (max-width: 910px) {
   .box3 .dad .relative .yulduz {
@@ -1442,7 +1689,7 @@ nav article p span {
     margin-top: 1rem;
   }
   .btn1-click, .btn2-click {
-    width: 97.5%;
+    width: 96.2%;
   }
 }
 @media (max-width: 891px) {
@@ -1480,6 +1727,11 @@ nav article p span {
   }
   .bgc-img .flex-box .top .a article h2 {
     padding: 10px 20px;
+  }
+}
+@media (max-width: 820px) {
+  .box9, .box10 {
+    grid-template-columns: repeat(auto-fit, 250px);
   }
 }
 @media (max-width: 800px) {
@@ -1520,6 +1772,17 @@ nav article p span {
     top: -220px;
   }
 }
+@media (max-width: 720px) {
+  .box9, .box10 {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
+@media (max-width: 620px) {
+  .box9, .box10 {
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 20px !important;
+  }
+}
 @media (max-width: 713px) {
   .box-dad .mySwiper .reletive .position p {
     font-size: 14px;
@@ -1557,6 +1820,88 @@ nav article p span {
   .box3 .dad .swiper-slide {
     width: 162.75px !important;
   }
+  nav article img {
+    width: 10px;
+  }
+  nav article p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 670px) {
+  .box-dad .mySwiper .reletive .position h1 {
+    font-size: 35px;
+  }
+  .box7 .box-box7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 202px);
+    justify-content: center;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+  .box7 .box-box7 div {
+    width: 250px;
+  }
+}
+@media (max-width: 650px) {
+  .box7 .box-box7 div article p {
+    font-size: 14px;
+  }
+  .rastichat .border img {
+    width: 250px;
+  }
+  .tovar .flrx .activeCeti {
+    width: 400px !important;
+    margin: auto;
+    height: 300px !important;
+  }
+}
+@media (max-width: 608px) {
+  .rastichat .border article {
+    width: 280px;
+  }
+  .rastichat .border article h6 {
+    font-size: 25px;
+  }
+  .rastichat .border article p {
+    font-size: 12px;
+    padding: 0px 20px;
+  }
+  .rastichat .border article h3 {
+    font-size: 18px;
+    width: 170px;
+  }
+}
+@media (max-width: 540px) {
+  .rastichat .border article h6 {
+    width: 200px;
+    font-size: 22px;
+  }
+  .rastichat .border article p {
+    width: 150px;
+    line-height: 12px;
+  }
+  .rastichat .border img {
+    width: 200px;
+  }
+  .box-dad .mySwiper .swiper-button-next {
+    top: 95%;
+    left: 250px;
+    z-index: 1000;
+  }
+  .box-dad .mySwiper .swiper-button-prev {
+    top: 95%;
+    left: 200px;
+  }
+  .box-dad .mySwiper .reletive .position h1 {
+    font-size: 25px;
+    width: 50px;
+  }
+  .box-dad .mySwiper .reletive .position p {
+    font-size: 10px;
+  }
+  .box-dad .mySwiper .reletive .position .btn-swiper {
+    left: -37%;
+  }
 }
 @media (max-width: 500px) {
   .form-container {
@@ -1564,5 +1909,8 @@ nav article p span {
   }
   .form-container h2 {
     font-size: 16px;
+  }
+  .box7 {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=Style.css.map */
