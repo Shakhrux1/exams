@@ -23,6 +23,7 @@ import ceti20 from './img2/Rectangle 22 (15).png';
 
 import yulduz from './img/Vector.png';
 import yulduzYon from './icon/free-icon-star-616655.png';
+import { Link } from 'react-router-dom';
 
 function KatalogPage() {
     const [yulduzlar, setYulduzlar] = useState(Array(20).fill(false));
@@ -42,67 +43,69 @@ function KatalogPage() {
     };
 
     return (
-        <div className="KatalogPage">
-            <p> Главная / Каталог товаров / Обувь</p>
-            <div className="flex">
-                <article>
-                    <h1>Обувь</h1>  
-                    <p>1 746 товаров</p>
-                </article>
-                <a href="больше товаров">Сортировать по  От дешевых к дорогим &rarr; </a>
+        <div className="container">
+            <div className="KatalogPage">
+
+<div className="flex">
+    <article>
+        <h1>Обувь</h1>  
+        <p>1 746 товаров</p>
+    </article>
+    <Link to="/account">Сортировать по  От дешевых к дорогим &rarr; </Link>
+</div>
+<div className="gridContainer">
+    {[
+        { img: ceti, title: 'Nikee Court Zoom Cage 2 ', price: '4 699 ₽', h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti2, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti3, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti4, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti5, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti6, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti7, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
+        { img: ceti8, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti9, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
+        { img: ceti10, title: 'Air Force 1 Ultra', price: '6 789 ₽'  , h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti11, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
+        { img: ceti12, title: 'Men’s Soccer Shoes', price: '2 699 ₽',  h2:'About The Goods'   , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti13, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti14, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
+        { img: ceti15, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
+        { img: ceti16, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
+        { img: ceti17, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti18, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti19, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti20, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti5, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti6, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti7, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+        { img: ceti8, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
+    ].map((product, index) => (
+        <div key={index} className="gridItem">
+            <div className="relative">
+                <img src={product.img} alt={product.title} />
+                <img
+                    style={{ width: '15px', display: yulduzlar[index] ? 'none' : 'block' }}
+                    onClick={() => handleClick(index)}
+                    className="yulduz"
+                    src={yulduz}
+                    alt="Star"
+                />
+                <img
+                    style={{ width: '15px', display: yulduzlar[index] ? 'block' : 'none' }}
+                    className="yulduz_yon2"
+                    src={yulduzYon}
+                    alt="Star"
+                />
+                <h2>{product.h2}</h2>
+                <div className="hoverCard">
+                    <h4>{product.title}</h4>
+                    <p>{product.lorem}</p>
+                </div>
             </div>
-            <div className="gridContainer">
-                {[
-                    { img: ceti, title: 'Nikee Court Zoom Cage 2 ', price: '4 699 ₽', h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti2, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti3, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti4, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti5, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti6, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti7, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
-                    { img: ceti8, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti9, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
-                    { img: ceti10, title: 'Air Force 1 Ultra', price: '6 789 ₽'  , h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti11, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
-                    { img: ceti12, title: 'Men’s Soccer Shoes', price: '2 699 ₽',  h2:'About The Goods'   , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti13, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti14, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
-                    { img: ceti15, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
-                    { img: ceti16, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods' , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores' },
-                    { img: ceti17, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti18, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti19, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti20, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti5, title: 'Nikee Court Zoom Cage 2', price: '4 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti6, title: 'Air Force 1 Ultra', price: '6 789 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti7, title: 'Air Force 1 Ultra Flyknit', price: '3 198 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                    { img: ceti8, title: 'Men’s Soccer Shoes', price: '2 699 ₽' ,  h2:'About The Goods'  , lorem:'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores'},
-                ].map((product, index) => (
-                    <div key={index} className="gridItem">
-                        <div className="relative">
-                            <img src={product.img} alt={product.title} />
-                            <img
-                                style={{ width: '15px', display: yulduzlar[index] ? 'none' : 'block' }}
-                                onClick={() => handleClick(index)}
-                                className="yulduz"
-                                src={yulduz}
-                                alt="Star"
-                            />
-                            <img
-                                style={{ width: '15px', display: yulduzlar[index] ? 'block' : 'none' }}
-                                className="yulduz_yon2"
-                                src={yulduzYon}
-                                alt="Star"
-                            />
-                            <h2>{product.h2}</h2>
-                            <div className="hoverCard">
-                                <h4>{product.title}</h4>
-                                <p>{product.lorem}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
+        </div>
+    ))}
+</div>
+</div>
         </div>
     );
 }

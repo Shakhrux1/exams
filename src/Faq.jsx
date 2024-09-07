@@ -8,6 +8,7 @@ function Faq () {
       
     return(
         <>
+            <div className="container">
             <div className="faq">
                 <p>Главная / FAQ</p>
                 <h5>FAQ</h5>
@@ -85,6 +86,7 @@ function Faq () {
                   </p>
                 </div>
               </div>
+            </div>
         </>
     )
 }

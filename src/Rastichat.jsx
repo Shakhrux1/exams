@@ -7,9 +7,10 @@ function Rastichat() {
     
   return (
     <>
+      <div className="container">
       <div className="rastichat">
         <div>
-          <p className="next-page">Главная / Рассчитать стоимость</p>
+          <p className="next-page"> </p>
           <h1>Рассчитать стоимость</h1>
           <p>
             Мы ежедневно добавляем новые товары на сайт, но если вам не удалось
@@ -131,6 +132,7 @@ function Rastichat() {
             </section>
       </div>
         )}
+      </div>
     </>
   );
 }

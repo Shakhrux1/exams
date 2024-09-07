@@ -16,6 +16,7 @@ function Brend () {
     ]
     return(
         <>
+            <div className="container">
             <div className='brend'>
                 <h6>Бренды</h6>
                 <div className="brendGrid">
@@ -28,6 +29,7 @@ function Brend () {
                         
                     ))}
                 </div>
+            </div>
             </div>
         </>
     )
