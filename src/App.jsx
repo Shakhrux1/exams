@@ -11,6 +11,7 @@ import Rabochy from './RabochyStol.jsx'
 import AsosyPage from './AsosyPage.jsx'
 import Navbar from './Navbar.jsx'
 import { Route, Routes } from 'react-router-dom'
+import Hover from './SwiperHover.jsx'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path='/costcal' element={<Rastichat/>}/>
             <Route path='/account' element={<Rabochy/>}/>
             <Route path='/faq' element={<Faq/>}/>
+            <Route path='/obuv/krasovki' element={<Hover/>}/>
           </Route>
         </Routes>
       </div>
@@ -34,3 +36,4 @@ function App() {
 }
 
 export default App
+

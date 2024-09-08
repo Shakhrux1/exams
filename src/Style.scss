@@ -43,13 +43,82 @@ main {
         transform: translateY(0);
     }
 }
+@keyframes bur{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(10px);
+    }
+}
+.modal-overlay {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    opacity: 0;
+    transform: scale(0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bur .3s linear 1;
+    &.show {
+      opacity: 1;
+      transform: scale(1);
+      transition: bur .3s linear 1;
+    }
+  
+    .modal {
+        position: relative;
+        left: 0;
+        top: 0;
+      svg{
+        fill: rgb(255, 255, 255);
+        position: absolute;
+        left:-75px;
+        top: -157px;
+      }
+      padding: 20px;
+      border-radius: 8px;
+
+      width: 90%;
+      max-width: 400px;
+      ul{
+        margin: auto;
+        li{
+            text-align: center;
+            padding: 10px 0;
+            list-style: none;
+           
+            p{
+                color: #FFF;
+            }
+            a{
+                font-size: 18px;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+      }
+    }
+  }
+  
 nav {
+    transition: all .3s;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 10px;
-
+    p{
+        cursor: pointer;
+    }
    a{
         text-decoration: none;
         color: #fff;
@@ -66,6 +135,7 @@ nav {
     .img{
         display: none;
     }
+
     ul {
         display: flex;
         align-items: center;
@@ -150,6 +220,7 @@ nav {
     }
 }
 .box-dad{
+    transition: all .3s;
     padding: 0 10px;
     margin-top:40px ;
     
@@ -265,6 +336,7 @@ nav {
       
 }
 .box3{
+    transition: all .3s;
     overflow: hidden;
     margin-top: 40px;
     padding: 0 10px;
@@ -362,6 +434,7 @@ nav {
 
 }
 .bgc-img{
+    transition: all .3s;
     background-image: url(./img/body.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -448,6 +521,7 @@ nav {
     }
 }
 .box7{
+    transition: all .3s;
     padding: 0 10px;
     display: flex;
     margin-top: 40px;
@@ -480,6 +554,7 @@ nav {
     }
 }
 .box8{
+    transition: all .3s;
     margin-top: 40px;
     padding:  0 10px;
     .flex{
@@ -538,10 +613,12 @@ nav {
     
 }
 .box-9-bgc{
+    transition: all .3s;
     background-color: #121214;
     color: #fff;
 }
 .box9{
+    transition: all .3s;
     margin-top: 40px;
     padding:  0 10px;
     display: grid;
@@ -639,6 +716,7 @@ nav {
     }
 }
 .box10{
+    transition: all .3s;
     margin-top: 40px;
     padding:  0 10px;
     display: none;
@@ -734,6 +812,7 @@ nav {
     }
 }
 .pointer{
+    transition: all .3s;
     border-bottom: 1px solid #272525;
     cursor: pointer;
 }
@@ -741,6 +820,7 @@ nav {
     display: none;
 }
 .displayNone{
+    transition: all .3s;
     display: block;
     animation: acordion .3s linear 1;
 }
@@ -767,7 +847,9 @@ nav {
     }
 }
 .nav{
+    transition: all .3s;
     nav {
+        transition: all .3s;
         color: white;
         display: flex;
         align-items: center;
@@ -828,6 +910,7 @@ nav {
     }
 }
 .KatalogPage{
+    transition: all .3s;
     margin-top: 40px;
     padding: 0 10px;
     .flex{
@@ -934,7 +1017,7 @@ nav {
 
 }
 .tovar{
-    
+    transition: all .3s;
     padding: 0 10px;
     margin-top: 40px;
     .flrx{
@@ -1202,6 +1285,7 @@ nav {
     display: block;
 }
 .rastichat{
+    transition: all .3s;
     margin-top: 40px;
     padding: 0 10px;
     display: flex;
@@ -1250,6 +1334,7 @@ nav {
     
 }
 .article-btn{
+    transition: all .3s;
     padding: 0 10px;
     margin-top: -18rem;
     .rastichat-btn{
@@ -1285,6 +1370,7 @@ nav {
     
 }
 .btn1-click{
+    transition: all .3s;
     margin: 0 10px;
     margin-top: 30px;
     width: 70%;
@@ -1328,6 +1414,7 @@ nav {
     }
 }
 .btn2-click{
+    transition: all .3s;
      margin: 0 10px;
     margin-top: 30px;
     width: 70%;
@@ -1430,6 +1517,7 @@ nav {
     }
 }   
 .faq{
+    transition: all .3s;
     margin-top: 20px;
 
     padding:  0 10px;
@@ -1472,6 +1560,7 @@ nav {
     
 }
 .brend{
+    transition: all .3s;
     padding:  0 10px;
     margin-top: 40px;
     h6{
@@ -1522,6 +1611,7 @@ nav {
     }
 }
 .adejdas{
+    transition: all .3s;
     margin-top: 40px;
     padding: 0 10px;
     h6{
@@ -1624,6 +1714,7 @@ nav {
 }
 
 .aksesuar{
+    transition: all .3s;
     margin-top: 40px;
     padding: 0  10px;
     height: 36rem;
@@ -1648,6 +1739,7 @@ nav {
     }
 }
 .dadBox{
+    transition: all .3s;
     margin-top: 40px;
     padding:  0 10px;
     h1{
@@ -1731,6 +1823,7 @@ nav {
     display: none;
     
 }
+
 @media(max-width: 1310px) {
     .box-dad {
         .mySwiper {
@@ -1990,9 +2083,10 @@ nav {
         position: relative;
         left: 0;
         top: 0;
-        ul{
+        .ul{
             display: none;
         }
+       
         .img{
             position: absolute;
             display: block;
@@ -2098,6 +2192,11 @@ nav {
     .box9 , .box10{
         grid-template-columns: repeat(auto-fit, 150px);
         gap: 20px !important;
+    }
+    .modal{
+        svg{
+            left: 10px !important;
+        }
     }
 }
 @media(max-width:713px){
