@@ -136,7 +136,7 @@ function Navbar() {
       </Link>
     </li>
     <li onClick={() => list(5)} className={`Information ${li === 5 ? 'lis' : ''}`} >
-      
+      git 
       <ul>
         <li onClick={() => list(6)} className={li === 6 ? 'lis' : ''}>
           <Link onClick={hideHandle} to="/faq">
