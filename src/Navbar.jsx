@@ -5,7 +5,7 @@ import icon2 from "./icon/Vector (Stroke) (1).png";
 import icon3 from "./icon/Vector (Stroke) (2).png";
 import icon4 from "./icon/Vector (Stroke) (3).png";
 import burger from "./icon/burger.png";
-import Page9 from "./Page9.jsx";
+import Page9 from "./PAge9.jsx";
 
 function Navbar() {
   const [isModalVisible, setModalVisible] = useState(false);
