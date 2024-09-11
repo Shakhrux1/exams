@@ -86,18 +86,7 @@ function Navbar() {
               </p>
             </article>
           </nav>
-        </div>
-      </main>
-
-      <header>
-        <Outlet />
-      </header>
-
-      <footer>
-        <Page9 />
-      </footer>
-
-      {isModalVisible && (
+          {isModalVisible && (
         <div className={`modal-overlay ${isModalVisible ? "show" : ""}`}>
           <div className="modal">
             <article>
@@ -149,6 +138,18 @@ function Navbar() {
           </div>
         </div>
       )}
+        </div>
+      </main>
+
+      <header>
+        <Outlet />
+      </header>
+
+      <footer>
+        <Page9 />
+      </footer>
+
+     
     </>
   );
 }
