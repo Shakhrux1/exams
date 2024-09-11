@@ -35,7 +35,6 @@ main {
 }
 
 .container {
-  background-color: sandybrown;
   max-width: 1450px;
   margin: auto;
 }
@@ -699,11 +698,19 @@ nav article p span {
   justify-content: center;
   padding-top: 40px;
 }
+.box10 .Page1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box10 .Page1 img {
+  padding: 5px;
+}
+.box10 div {
+  margin: 10px 0;
+}
 .box10 div h3 {
   padding: 5px 5px;
-}
-.box10 div a img {
-  padding: 5px;
 }
 .box10 div .a {
   color: gray;
@@ -716,9 +723,6 @@ nav article p span {
 .box10 div p {
   padding: 8px 0;
   color: #DCDCE0;
-}
-.box10 div .Page1 img {
-  margin-top: 45px;
 }
 .box10 div article {
   display: flex;
@@ -758,10 +762,17 @@ nav article p span {
 .box10 div .article {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 5px 0;
 }
 .box10 div .article img {
   margin-right: 20px;
+}
+.box10 div a {
+  margin: auto;
+}
+.box10 div .imgsa {
+  transform: translate(8rem, -3rem);
 }
 .box10 div ul {
   list-style: none;
@@ -1729,7 +1740,8 @@ nav article p span {
   border-collapse: collapse;
   text-align: left;
 }
-.dadBox .order-table-container .order-table th, .dadBox .order-table-container .order-table td {
+.dadBox .order-table-container .order-table th,
+.dadBox .order-table-container .order-table td {
   padding: 10px;
   border-bottom: 1px solid #e9ecef;
 }
@@ -1789,7 +1801,8 @@ nav article p span {
   }
 }
 @media (max-width: 1131px) {
-  .btn1-click, .btn2-click {
+  .btn1-click,
+  .btn2-click {
     width: 62%;
   }
   .tovar .flrx {
@@ -1889,7 +1902,8 @@ nav article p span {
   nav ul {
     gap: 25px;
   }
-  .box9, .box10 {
+  .box9,
+  .box10 {
     gap: 200px !important;
     row-gap: 50px !important;
   }
@@ -1909,6 +1923,7 @@ nav article p span {
     top: -220px;
   }
   .rastichat {
+    margin-top: 0;
     display: block;
   }
   .rastichat .border {
@@ -1932,7 +1947,8 @@ nav article p span {
   .article-btn {
     margin-top: 1rem;
   }
-  .btn1-click, .btn2-click {
+  .btn1-click,
+  .btn2-click {
     width: 96.2%;
   }
 }
@@ -1982,7 +1998,8 @@ nav article p span {
   }
 }
 @media (max-width: 820px) {
-  .box9, .box10 {
+  .box9,
+  .box10 {
     grid-template-columns: repeat(auto-fit, 250px);
   }
 }
@@ -2025,12 +2042,14 @@ nav article p span {
   }
 }
 @media (max-width: 720px) {
-  .box9, .box10 {
+  .box9,
+  .box10 {
     grid-template-columns: repeat(auto-fit, 200px);
   }
 }
 @media (max-width: 620px) {
-  .box9, .box10 {
+  .box9,
+  .box10 {
     grid-template-columns: repeat(auto-fit, 150px);
     gap: 20px !important;
   }
@@ -2137,6 +2156,9 @@ nav article p span {
     font-size: 18px;
     width: 170px;
   }
+  .btn1-click .paddings div {
+    width: 90%;
+  }
 }
 @media (max-width: 540px) {
   .rastichat .border article h6 {
@@ -2170,6 +2192,15 @@ nav article p span {
     left: -37%;
   }
 }
+@media (max-width: 510px) {
+  .box9 {
+    display: none;
+  }
+  .box10 {
+    display: block;
+    margin: 0 30px;
+  }
+}
 @media (max-width: 500px) {
   .form-container {
     padding: 10px;
@@ -2188,6 +2219,33 @@ nav article p span {
   }
 }
 @media (max-width: 456px) {
+  .adejdas h6 {
+    font-size: 45px;
+  }
+  .KatalogPage .flex article h1 {
+    font-size: 40px;
+  }
+  .KatalogPage .flex a {
+    font-size: 10px;
+  }
+  .rastichat {
+    margin: auto;
+    margin-top: 0;
+  }
+  .rastichat div h1 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .rastichat .border {
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+    position: sticky;
+    left: 12%;
+  }
+  .rastichat .border img {
+    transform: translateX(20%);
+  }
   .box-dad .mySwiper .reletive .position h1 {
     font-size: 20px;
     width: 50px;
@@ -2203,5 +2261,17 @@ nav article p span {
   }
   .box-dad .mySwiper .reletive .position .btn-swiper::before {
     top: -7px;
+  }
+  .article-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .article-btn .rastichat-btn,
+  .article-btn .rastichat-btn2 {
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 10px;
+    margin: 0 10px;
   }
 }/*# sourceMappingURL=Style.css.map */

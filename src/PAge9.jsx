@@ -97,11 +97,15 @@ function Page9() {
             </div>
           </div>
           <div className="box10">
+            <a href="#Обувь" className="Page1">
+                <img src={logo} alt="" />
+              </a>
             <div>
               <article className="pointer" onClick={() => acordions(0)}>
                 <h2>Каталог</h2>
                 <p>{acordion === 0 ? " \u2212" : "\u002B"}</p>
               </article>
+              
               <ul className={acordion === 0 ? "displayNone" : "displayBlock"}>
                 <li>
                   <a href="">Одежда</a>
@@ -116,9 +120,7 @@ function Page9() {
                   <a href="">Расчет стоимости</a>
                 </li>
               </ul>
-              <a href="#Обувь" className="Page1">
-                <img src={logo} alt="" />
-              </a>
+              
             </div>
             <div>
               <article className="pointer" onClick={() => acordions(1)}>
@@ -143,7 +145,7 @@ function Page9() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div >
               <article className="pointer" onClick={() => acordions(2)}>
                 <h2>Контакты</h2>
                 <p>{acordion === 2 ? " \u2212" : "\u002B"}</p>
@@ -167,10 +169,10 @@ function Page9() {
                 <h3>Наши соц.сети</h3>
               </ul>
               <a href="">
-                <img src={mul2} alt="" />
+                <img src={mul2} alt="" className="imgsa" />
               </a>
             </div>
-            <div>
+            <div className="margin">
               <h2>Подписка на новости</h2>
               <p>Будьте в курсе скидок и новостей</p>
               <form>
