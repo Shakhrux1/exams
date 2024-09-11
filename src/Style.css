@@ -18,6 +18,10 @@ html {
   margin: 0;
 }
 
+.lis a {
+  color: #ffffff;
+}
+
 @keyframes ceti {
   0% {
     opacity: 0;
@@ -31,6 +35,7 @@ main {
 }
 
 .container {
+  background-color: sandybrown;
   max-width: 1450px;
   margin: auto;
 }
@@ -117,6 +122,7 @@ nav {
 }
 nav p {
   cursor: pointer;
+  color: gray;
 }
 nav a {
   text-decoration: none;
@@ -796,6 +802,17 @@ nav article p span {
   transition: all 0.3s;
 }
 .yulduz_yon:hover {
+  transform: scale(1.5);
+}
+
+.yulduz_yon5 {
+  position: relative;
+  left: 200px;
+  top: -220px;
+  width: 10px;
+  transition: all 0.3s;
+}
+.yulduz_yon5:hover {
   transform: scale(1.5);
 }
 
@@ -1852,6 +1869,10 @@ nav article p span {
     left: 200px;
     top: -220px;
   }
+  .yulduz_yon5 {
+    left: 150px;
+    top: -150px;
+  }
 }
 @media (max-width: 1011px) {
   .bgc-img {
@@ -1918,6 +1939,14 @@ nav article p span {
 @media (max-width: 891px) {
   .tovar .flrx {
     display: block;
+  }
+  .yulduz_yon {
+    left: 180px;
+    top: -180px;
+  }
+  .yulduz_yon5 {
+    left: 120px;
+    top: -120px;
   }
 }
 @media (max-width: 850px) {
@@ -2018,6 +2047,10 @@ nav article p span {
     padding: 10px 30px;
     font-size: 10px;
   }
+  .box-dad .mySwiper .reletive .position .btn-swiper::before {
+    top: -4px;
+    font-size: 9px;
+  }
   .box-dad .swiper-button-next,
   .box-dad .swiper-button-prev {
     color: #000;
@@ -2051,6 +2084,14 @@ nav article p span {
   }
   nav article p {
     font-size: 10px;
+  }
+  .yulduz_yon {
+    left: 150px;
+    top: -150px;
+  }
+  .yulduz_yon5 {
+    left: 150px;
+    top: -150px;
   }
 }
 @media (max-width: 670px) {
@@ -2138,5 +2179,29 @@ nav article p span {
   }
   .box7 {
     margin-top: 0;
+  }
+  .box8 .dad {
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+  .box8 .dad .reletiv img {
+    width: 350px;
+  }
+}
+@media (max-width: 456px) {
+  .box-dad .mySwiper .reletive .position h1 {
+    font-size: 20px;
+    width: 50px;
+  }
+  .box-dad .mySwiper .reletive .position p {
+    font-size: 10px;
+    text-align: start;
+    padding: 3px 18px;
+  }
+  .box-dad .mySwiper .reletive .position .btn-swiper {
+    left: -35%;
+    padding: 8px 30px;
+  }
+  .box-dad .mySwiper .reletive .position .btn-swiper::before {
+    top: -7px;
   }
 }/*# sourceMappingURL=Style.css.map */

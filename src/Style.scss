@@ -15,6 +15,11 @@ html{
     margin: 0;
     
 }
+.lis{
+    a{
+        color: #ffffff;
+    }
+}
 @keyframes ceti {
     0%{
         opacity: 0;
@@ -28,7 +33,7 @@ main {
     background-color: #121214;
 }
 .container {
-    // background-color: sandybrown;
+    background-color: sandybrown;
     max-width: 1450px;
     margin: auto;
     
@@ -118,6 +123,7 @@ nav {
     padding: 20px 10px;
     p{
         cursor: pointer;
+        color: gray;
     }
    a{
         text-decoration: none;
@@ -825,6 +831,17 @@ nav {
     animation: acordion .3s linear 1;
 }
 .yulduz_yon{
+
+    position: relative;
+    left: 200px;
+    top: -220px;
+    width: 10px;
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+.yulduz_yon5{
 
     position: relative;
     left: 200px;
@@ -1992,6 +2009,10 @@ nav {
         left: 200px;
         top: -220px;
     }
+    .yulduz_yon5{
+        left:150px;
+        top: -150px;
+    }
 }
 @media(max-width:1011px){
     .bgc-img{
@@ -2076,6 +2097,14 @@ nav {
             display: block;
             
         }
+    }
+    .yulduz_yon{
+        left: 180px;
+        top: -180px;
+    }
+    .yulduz_yon5{
+        left:120px;
+        top: -120px;
     }
 }
 @media(max-width:850px){
@@ -2211,6 +2240,10 @@ nav {
                         left: -40%;
                         padding: 10px 30px;
                         font-size: 10px;
+                        &::before{
+                            top: -4px;
+                            font-size: 9px;
+                        }
                     }
                 }
             }
@@ -2258,6 +2291,14 @@ nav {
             font-size: 10px;
            }
         }
+    }
+    .yulduz_yon{
+        left: 150px;
+        top: -150px;
+    }
+    .yulduz_yon5{
+        left:150px;
+        top: -150px;
     }
 }
 @media(max-width:670px){
@@ -2391,5 +2432,40 @@ nav {
     .box7{
         margin-top: 0;
     }
+    .box8{
+        .dad{
+            grid-template-columns: repeat(auto-fit, 350px);
+            .reletiv{
+                img{
+                    width: 350px;
+                }
+            }
+        }
+    }
   }
-  
+  @media (max-width: 456px){
+    .box-dad{
+        .mySwiper{
+            .reletive{
+                .position{
+                    h1{
+                        font-size: 20px;
+                        width: 50px;
+                    }
+                    p{
+                        font-size: 10px;
+                        text-align: start;
+                        padding: 3px 18px;
+                    }
+                    .btn-swiper{
+                        left: -35%;
+                        padding:8px 30px;
+                        &::before{
+                            top: -7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }

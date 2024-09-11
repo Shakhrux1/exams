@@ -68,7 +68,7 @@ function Page3() {
                                 />
                                 <img
                                     style={{ width: '15px', display: yulduzlar[index] ? 'block' : 'none' }}
-                                    className="yulduz_yon"
+                                    className="yulduz_yon5"
                                     src={yulduzYon}
                                     alt="Star"
                                 />
